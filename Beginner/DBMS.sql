@@ -54,28 +54,35 @@ order by salary asc;
 select * from details
 order by salary desc;
 
-
+//DISPLAY TOP THREE HIGHEST PAID EMPLOYEES
 select * from details
 order by salary desc limit 3;
 
+//DISPLAY EMPLOYEES NAME IN ALPHABETICAL ORDER
 select * from details
 order by name asc;
 
+//DISPLAY EMPLOYEES WHOSE NAMES START WITH CAPITAL A
 select * from details
 where name like 'A%';
 
+//DISPLAY EMPLOYEES WHOSE NAME ENDS WITH SMALL a
 select * from details
 where name like '%a';
 
+//DISPLAY EMPLOYEES WHOSE NAME CONTAINS SMALL ar
 select * from details
 where name like '%ar%';
 
+//DISPLAY EMPLOYEES WHOSE AGE IS NOT BETWEEN 25-30
 select * from details
 where salary not between 25 and 30;
 
+//DISPLAY EMPLOYEES FROM IT DEPARTMENT WHOSE SALARY IS GREATER THAN 65000
 select * from details
 where dept = 'it' and salary > 65000;
 
+//DISPLAY ALL EMPLOYEES ORDERED FIRST BY DEPARTMENT AND THEN BY SALARY (HIGHEST FIRST)
 select * from details
 order by dept asc , salary desc;
 
