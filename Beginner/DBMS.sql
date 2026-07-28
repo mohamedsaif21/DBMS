@@ -8,39 +8,52 @@ insert into details values
 (7,'Suresh',60,'HR',68000,'Chennai'),
 (8,'Anitha',26,'IT',62000,'Trichy');
 
+//DISPLAY ALL EMPLOYEE RECORDS
 select * from details 
 
+//DISPLAY ONLY NAME AND SALARY OF THE EMPLOYEE
 select name , salary from details
 
+//DISPLAY UNIQUE DEPARTMENTS
 select distinct dept
 from details;
 
+//FIND EMPLOYEE WHOSE SALARY IS GREATER THAN 60000 THOUSAND
 select * from details
 where salary > 60000;
 
+//FIND THE EMPLOYEE FROM PARTICULAR CITIES
 select * from details
 where address = 'Chennai';
 
+//FIND EMPLOYEE WHOSE AGE IS GREATER THAN OR EQUAL TO 60
 select * from details
 where age >= 60;
 
+//DISPLAY EMPLOYEES WHO BELONGS TO THE IT DEPARTMENT
 select * from details
-where dept = 'it';
+where dept = 'IT';
 
+//FIND EMPLOYEES WHOSE SALARY IS BETWEEN 50000 AND 70000
 select * from details
-where salary between 50000 and 60000;
+where salary between 50000 and 70000;
 
+//FIND EMPLOYEES FROM CHENNAI OR MADURAI
 select * from details
-where address in ('chennai','madurai');
+where address in ('Chennai','Madurai');
 
+//FIND EMPLOYEES NOT WORKING IN HR DEPARTMENT
 select * from details
-where dept!='hr';
+where dept!='HR';
 
+//SHORT EMPLOYEES BY SALARY IN ASCENDING ORDER
 select * from details
 order by salary asc;
 
+//SHORT EMPLOYEES BY SALARY IN DESCENDING ORDER
 select * from details
 order by salary desc;
+
 
 select * from details
 order by salary desc limit 3;
