@@ -1,3 +1,16 @@
+CREATE schema employee
+
+use employee
+
+create table details(
+id int,
+name VARCHAR(20),
+age int,
+dept VARCHAR(20),
+salary int,
+address VARCHAR(20)
+);
+
 insert into details values
 (1,'Arun',24,'IT',65000,'Chennai'),
 (2,'Kavin',29,'HR',45000,'Madurai'),
@@ -8,7 +21,8 @@ insert into details values
 (7,'Suresh',60,'HR',68000,'Chennai'),
 (8,'Anitha',26,'IT',62000,'Trichy');
 
--- DISPLAY ALL EMPLOYEE RECORDS
+-- DISPLAY ALL EMPLOYEE RECORDS 
+
 select * from details 
 
 -- DISPLAY ONLY NAME AND SALARY OF THE EMPLOYEE
